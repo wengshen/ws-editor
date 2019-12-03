@@ -1,0 +1,620 @@
+
+.ws-dtable-gsheet-frame {
+  display: none;
+  background: @background-panel;
+  color: @panel-text;
+  width: 100%;
+  height: 100%;
+  overflow:auto;
+  font-weight: 100;
+  font-family: 'Roboto',sans-serif;
+}
+
+.ws-dtable-gsheet {
+  // position: absolute;
+  width: 100%;
+  // height: 700px;
+  // left: 50%;
+  // top: 50%;
+  // transform: translate(-50%, -50%);
+  padding: 50px;
+  // background: @secondary-background-panel;
+  color: @panel-text;
+  border-radius: 30px;
+  overflow-y: auto;
+  // border: 8px dashed @border-main-color;
+  table {
+    td{
+        padding-right: 5px;
+    }
+  }
+}
+.ws-toolbox-chart-title-input {
+    font-family: @font-main;
+    width: 42%;
+    border: 0;
+    outline: transparent;
+}
+
+.ws-dtable-weird-data {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  height: 130px;
+  font-weight: 100;
+  background: @background-error;
+  color: @color-error;
+  display: none;
+}
+.ws-add-row-text {
+    font-size: 10px;
+    padding-right: 7px;
+    font-weight: 600;
+    color: #25386f;
+    position: relative;
+}
+
+.ws-dtable-weird-data-body {
+  margin-bottom: 10px;
+}
+
+.ws-dtable-weird-data button {
+  margin-right: 5px;
+}
+
+.ws-dtable-gsheet-heading {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 600;
+  color: #25386f;
+  margin-bottom: 20px;
+  font-family: @font-main;
+}
+
+.ws-dtable-gsheet-desc {
+  text-align: left;
+  font-size: 22px;
+}
+
+.ws-dtable-gsheet-label {
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.ws-dtable-gsheet-inner {
+  width: 80%;
+  position: relative;
+}
+
+.ws-dtable-gsheet-id {
+  font-size: 15px;
+  height: 30px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.ws-gsheet-btn-container {
+    padding-bottom: 10px;
+}
+
+.ws-gsheet-text {
+    font-size: 10px;
+    color: black;
+    font-weight: 300;
+}
+
+.ws-dtable-gsheet-centered {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.ws-dtable-gsheet-button {
+  margin-right: 10px;
+  width: 100%;
+}
+
+.ws-dtable-gsheet-half {
+  width: 50%;
+}
+
+.ws-dtable-container {
+    width:100%;
+    height:99%;
+    position: relative;
+    overflow: hidden;
+    // border:@border-main;
+    border-collapse: collapse;
+    background:@secondary-background-panel;
+    color: @secondary-color-panel;
+    .ws-box-size;
+}
+
+.ws-dtable-drop-zone {
+  pointer-events: none;
+  position: absolute;
+  width: 80%;
+  height: 150px;
+  border-radius: 30px;
+  // background: @bright-background-panel;
+  color: @color-header;
+  left: 50%;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  text-align: center;
+  font-size: 20px;    
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.ws-dtable-drop-zone-small {
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: 100;
+  margin-left: -9px;
+}
+
+.ws-dtable-table-frame {
+    width:100%;
+    height:100%;    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-left:40px;
+    margin-top:55px;
+    overflow: auto;
+    .ws-box-size;
+}
+
+.ws-dtable-table {
+    table-layout: fixed;
+}
+
+.ws-dtable-head {
+
+}
+
+.ws-dtable-body {
+
+}
+
+.ws-dtable-row-select-box {
+  box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+}
+
+.ws-dtable-body tr {
+    height: 35px;
+    max-height: 35px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ws-dtable-body col {
+    min-width: 20px;
+}
+
+.ws-dtable-toolbar {
+    background:@background-panel !important;
+    color:@text-panel !important;
+    height:60px
+}
+
+.ws-dtable-imp-button {
+    margin-right:10px;
+}
+
+.ws-dtable-toolbar-label {
+    float:left;
+    padding-left:40px;
+    line-height: 60px;
+    font-family: @font-secondary;
+    font-size:14px;
+    font-weight: 100;
+    height:100%;
+    .ws-box-size;
+}
+
+.ws-dtable-body td {
+    position: relative;
+    padding-left:10px;
+    padding-right:10px;
+    min-width:20px;
+    height: 35px;
+    max-height: 35px;
+    border-right:@border-main;
+    border-bottom:@border-main;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.ws-dtable-body-selected-row {
+    background:#fff !important;
+    color:#000 !important;
+}
+
+.ws-dtable-col-val {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;    
+    line-height: 30px;
+    height: 35px;
+    max-height:40px;
+    .ws-box-size;
+}
+
+.ws-dtable-input {
+    position: absolute;
+    left:0px;
+    top:0px;
+    background:#fff !important;
+    font-family: @font-secondary;
+    font-weight: 100;
+    width:100%;
+    height:100%;
+    border: 2px solid #5594F4;
+    resize: none;
+    .ws-box-size;
+}
+
+.ws-dtable-input-header {
+    background:@background-panel !important;
+    color:@text-main !important;
+    text-align: left;
+    font-size: 12px;
+}
+
+.ws-dtable-table td {
+    overflow: hidden;
+}
+
+.ws-dtable-body td input {
+    background:none;
+    font-family: @font-secondary;
+    font-weight: 100;
+    width:100%;
+    height:100%;
+    font-size:24px;
+    outline: none;
+    border:none;
+    .ws-box-size;
+}
+
+.ws-dtable-load-indicator {
+  z-index: 100;
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  border-radius: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: @background-panel;
+  color: @text-panel;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  opacity: 0;
+  pointer-events:none;
+}
+
+.ws-dtable-table-tail {
+  text-align: center;
+  font-size: 18px;
+  display: none;
+  padding: 20px;
+}
+ 
+.ws-dtable-body td input:active {
+
+}
+
+.ws-dtable-resize-handle {
+    position: absolute;
+    right:0px;
+    top:0px;
+    width:5px;
+    height:40px;
+    //background:#AA0000;
+    cursor: ew-resize;
+    z-index: 100;
+}
+
+.ws-dtable-resize-handle-moving {
+    background:@highlight-background;
+}
+
+.ws-createchartwizard-table {
+    width: 100% !important;
+}
+
+.ws-dtable-top-bar {
+    position: absolute;
+    display: table;
+    height:28px;
+    width:10000px;
+    left:40px;
+    top:0px;
+    font-size: 11px;
+    color:@panel-text;
+    // border-bottom: @border-main;
+
+    //color:@color-toolbar;
+}
+
+.ws-dtable-top-bar-col {
+    border-left: @border-main;
+    border-right: @border-main;
+    border-bottom: @border-main;
+    div {
+        font-size: 12px;
+        text-align:left;
+        padding-left: 5px;
+    }
+}
+
+.ws-dtable-top-bar-letter {
+    border: @border-main;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background:@letter-cell-background-color;
+    cursor: pointer;
+}
+
+.ws-dtable-top-bar-col,
+.ws-dtable-top-bar-letter,
+ {
+    position: relative;
+    display:table-cell;
+    width:80px;
+    min-width: 20px;
+    height:100%;
+    line-height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    //padding:5px;
+    text-align: center;
+    .ws-box-size;
+}
+
+.ws-dtable-top-bar-col-options {
+    // opacity: 0;
+    padding:5px;
+    position: absolute;
+    left:2px;
+    top:50%;
+    transform:translate(0, -50%);
+    color:@secondary-color-panel;
+}
+
+.ws-dtable-top-bar-col-options:hover {
+    //background: @accent-color !important;
+    color: @selected-item-color !important;
+}
+
+.ws-dtable-top-left-panel {
+    position: absolute;
+    left:0px;
+    top:0px;
+    padding:10px;
+    width:20px;
+    height:20px;
+    background:@background-panel;
+}
+
+.ws-dtable-left-bar {
+    width:40px;   
+    top:0px;
+    bottom:0px;
+    padding-top: 54px;
+    position: absolute;    
+    z-index: 1000;
+    font-size: 11px;
+    background:@background-panel;
+    //color:@color-toolbar;
+}
+
+.ws-dtable-left-bar-row:first-of-type {
+    border-top: 1px solid rgba(14, 14, 14, 0.15);
+    height: 37px;
+}
+
+.ws-dtable-left-bar-row {
+    height: 36px;
+    cursor: pointer;
+    // border-bottom: @border-main;
+    width:100%;    
+    border-bottom: 1px solid rgba(14, 14, 14, 0.15);
+    border-right: 1px solid rgba(14, 14, 14, 0.15);    
+    border-left: 1px solid rgba(14, 14, 14, 0.15);    
+    text-align: center;
+    padding-top: 9px;
+    background:@letter-cell-background-color;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .ws-box-size;
+}
+
+.ws-dtable-top-bar-letter,
+.ws-dtable-top-bar-col{
+    transition: 0.04s width;
+}
+col {
+    transition: .06s width;
+}
+
+.ws-dtable-top-bar-letter.no-transition,
+.ws-dtable-top-bar-col.no-transition,
+col.no-transition {
+    transition: 0s all;
+}
+
+.cell-hide {
+    width: 3px !important;
+    min-width: 3px !important;
+    .ws-dtable-cell-value,
+    .ws-dtable-top-bar-col-options,
+    .ws-dtable-resize-handle,
+    div {
+        display: none;
+    }
+}
+
+.cell-selected {
+    background-color: rgba(85, 148, 244, 0.14) !important;
+}
+.cell-copy-selected {
+    background-color: rgba(3, 232, 21, 0.12) !important;
+}
+
+.ws-dtable-movement-bar {
+    background-color: rgba(148, 148, 148, 0.34);
+    position: absolute;
+    display: none;
+}
+
+.ws-dtable-movement-bar.active {
+    display: block;    
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}
+.ws-dtable-top-bar-col.highlight-right,
+.ws-dtable-top-bar-letter.highlight-right,
+.ws-dtable-cell.highlight-right {
+    border-right: 2px double black !important;
+}
+
+.ws-dtable-corner-piece {
+    position: absolute;        
+    width: 0.3rem;
+    height: 0.3rem;
+    background-color: #5594F4;
+    border: 2px solid white;
+    z-index: 1001;
+    cursor: crosshair;
+    display: none;
+}
+.ws-dtable-hide-cells {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 54px;
+    width: 40px;
+    z-index: 1001;
+    border-right: 1px solid rgba(14, 14, 14, 0.15);
+    border-left: 1px solid rgba(14, 14, 14, 0.15);
+    border-top: 1px solid rgba(14, 14, 14, 0.15);
+    background-color: #f3f3f3;
+}
+
+
+.ws-export-btn {
+    width: 45% !important;
+  }
+  
+.ws-dtable-extra-options {
+    width: 166px;
+    display: inline-block;
+    margin-right: 6px;
+    .ws-add-row-container {
+        border-right: 1px solid #e6e6e6;
+        .ws-add-row-input {
+            display: inline-block;
+            width: 35px;
+            margin-right: 5px;
+            min-height: 20px;
+            height: 24px;
+            position: relative;
+            top: -2px;
+        }
+        .ws-add-row-btn {
+            margin-top: 0px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.ws-datapage-body {
+    float: left;
+}
+.ws-dtable-title {
+    width: 100%;
+    min-height: 20px;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-bottom: 25px;
+    color: #000;
+    font-weight: 100;
+    font-size: 18px;
+    padding-top: 17px;
+    max-height: 62px;
+}
+
+.ws-table-dropzone-container {
+    max-width: 640px;
+    margin-left: 38px;
+    margin-right: auto;
+    .ws-table-dropzone {
+        border: 2px dashed rgb(140, 140, 140);
+        border-radius: 4px;
+        text-align: center;
+        min-height: 264px;
+        .ws-table-dropzone-title {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 24px;
+            color: rgb(47, 62, 77);
+        }
+        .ws-table-dropzone-subtitle {
+            text-align: center;
+            color: #2f3e4d;
+            padding-top: 5px;
+            padding-bottom: 15px;
+            font-size: 14px;
+        }
+        .ws-table-dropzone-message {
+            margin-top: 20px;
+            font-weight: 500;
+            font-size: 12px;
+        }
+    }
+    
+}
+
+@media (max-width: 1366px) {
+    .ws-dtable-extra-options {
+        width: 104px;
+    }
+    .ws-hide-sm {
+        display: none;
+    }
+    .ws-sm-button {
+        min-width: 54px;    
+    }
+    .ws-toolbox-icons {
+        padding-right: 0px;
+    }
+    .ws-toolbox-chart-title-input {
+        width: 40%;
+    }
+}

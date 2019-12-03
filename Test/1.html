@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="javascript">
+        function minOfArray(arr) {
+            var min = Infinity;
+            var QUANTUM = 32768;
+
+            for (var i = 0, len = arr.length; i < len; i += QUANTUM) {
+                var submin = Math.min.apply(null, arr.slice(i, Math.min(i + QUANTUM, len)));
+                min = Math.min(submin, min);
+            }
+
+            return min;
+        }
+
+        var min = minOfArray([5, 6, 2, 3, 7]);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+.ws-field-help {
+  // position: absolute;
+  // top:50%;
+  // left:0px;
+  // transform:translate(0, -50%);
+}
+
+.ws-field-colorpicker {
+  width: 100%;
+  border: @input-border;
+  padding: 5px;
+  min-height: 30px;
+  font-size: 13px;
+  .ws-transition;
+  .ws-box-size;
+}
+
+.ws-field-container {
+  padding-right: 5px;
+  width: 100%;
+  position: relative;
+  .ws-box-size;
+  .cm-s-neo.CodeMirror {
+    border: 1px solid #aaa;
+  }
+}
+
+.ws-field-reset {
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -7px;
+  text-align: center;
+  line-height: 32px !important;
+  cursor: pointer;
+  color: @wiz-bar-background;
+  .ws-transition;
+}
+
+.ws-field-code {
+  outline: none;
+  resize: none;
+  width: 100%;
+  height: 250px;
+  font-family: monospace;
+}
+
+.ws-field-code-container {
+}
+
+.ws-field-reset:hover {
+  color: @accent-color;
+}
+
+.ws-field-colorpicker-reset:hover {
+  color: @accent-color;
+}
+
+.ws-field-colorpicker {
+  max-width: 29px;
+  display: block;
+  width: 100%;
+  font-size: 9px !important;
+  line-height: 1.5 !important;
+  padding-top: 8px !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  text-align: center;
+}
+
+.ws-field-input,
+.ws-field-colorpicker {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .ws-customize-field-label {
+    font-weight: 500; 
+    font-size: 12px;
+  }
+}
+
+.ws-field-input {
+  width: 100%;
+  outline: none;
+  border: @input-border;
+  color: @text-main !important;
+  padding: 7px;
+  min-height: 30px;
+  .ws-box-size;
+}
+
+.ws-field-range {
+  //position: relative;
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  height: 30px;
+  border: @input-border;
+  .ws-box-size;
+}
+
+.ws-field-range-indicator {
+  //position:absolute;
+  line-height: 10px;
+  min-height: 15px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.ws-field-range-null {
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  font-size: 12px;
+}
+
+.ws-field-select {
+  width: 100%;
+  min-height: 30px;
+  border: @input-border;
+  .ws-box-size;
+}
+
+.ws-field-tooltip {
+  font-size: 12px;
+  font-family: @font-secondary;
+}
+
+.ws-field-colorpicker-compact {
+  position: relative;
+  display: inline-block;
+  padding: 4px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  border: @input-border;
+  width: 30px;
+  height: 30px;
+}
+
+.ws-field-array-add {
+  background: @background-main;
+  color: @text-main;
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+  font-size: 14px;
+  line-height: 30px !important;
+  text-align: center;
+  display: inline-block;
+  border: 1px dashed #000;
+  border-radius: 3px;
+  cursor: pointer;
+  .ws-transition;
+}
+
+.ws-field-array-add.fa-plus:before {
+  position: relative;
+  top: -4px;
+}
+
+.ws-field-table {
+  width: 100%;
+  padding: 0px;
+  border-collapse: collapse;
+
+  .ws-box-size;
+}
+
+.ws-field-table td:first-child {
+  min-width: auto !important;
+  width: auto !important;
+}
+
+.ws-field-table td:last-child {
+  max-width: 30px;
+}
+
+.ws-field-table-widget-column {
+  width: 100%;
+  position: relative;
+}
+
+.ws-field-array-add:hover {
+  background: @wiz-bar-background;
+  color: @wiz-bar-color;
+}
+
+.ws-field-array-remove {
+  opacity: 0;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: @background-main;
+  color: @text-main;
+  font-size: 12px;
+  border-left: @border-main;
+  border-top: @border-main;
+  padding: 2px;
+  .ws-transition;
+}
+
+.ws-field-error {
+  //position:absolute;
+  opacity: 0;
+  display: none;
+  background: @background-error;
+  color: @color-error;
+  left: 0px;
+  bottom: -10px;
+  pointer-events: none;
+  padding: 4px;
+  .ws-box-size;
+  .ws-transition;
+}
+
+.ws-field-header {
+  font-size: 13px;
+  padding-bottom: 5px;
+  font-weight: 500;
+  color: rgb(36, 54, 113);
+}
+
+.annotation-buttons {
+  padding-left: 9px;
+  display: inline-block;
+  padding-right: 10px;
+  padding-top: 8px;
+}
+
+.annotation-buttons-container {
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  padding: 0px !important;
+}
+
+.ws-annotation-container {
+  font-size: 14px;
+  background-color: white;
+  color: #25386f;
+  border-radius: 40px;
+  margin-right: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  width: 32px;
+  overflow: hidden;
+  height: 32px;
+  padding: 0px !important;
+  vertical-align: bottom;
+}
+
+.ws-annotation-container.active {
+  width:223px;
+}
+.annotation-buttons.active {
+  color: #42c8c0;
+}
+
+.ws-active-annotation {
+  position: absolute;
+}
+
+.ws-template-tooltip.annotation-buttons {
+  .ws-tooltip-text {
+    position: fixed;
+    top: initial;
+    left: initial;
+    margin-top: 25px;
+    margin-left: -68px;
+  }
+}
+.ws-template-tooltip.annotation-buttons.usingsafari {
+  padding-right: 14px;
+  .ws-tooltip-text {
+    margin-top: 80px;
+    margin-left: -54px;
+  }
+}

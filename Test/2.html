@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="highcharts-editor.min.css" type="text/css" rel="stylesheet"/>
+    <script src="highcharts-editor.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+</body>
+<script>
+    //Create an editor widget and attach it to the document body
+    ws.Editor(document.body).on('ChartChange', function (data) {
+        //Do something with the modified chart here.
+    });
+</script>
+</html>

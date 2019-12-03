@@ -1,0 +1,52 @@
+.ws-toolbar {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  background-color: @accent-color;
+  line-height: 100%;
+  font-family: @font-secondary;
+  .ws-box-size;
+}
+
+.ws-toolbar-center {
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 50%;
+  .ws-box-size;
+}
+
+.ws-toolbar-left {
+  //float: left;
+  position: absolute;
+  left: 0px;
+}
+
+.ws-toolbar-right {
+  //float: right;
+  position: absolute;
+  right: 0px;
+}
+
+.ws-toolbar .icon {
+  font-size: 20px !important;
+  line-height: 60px;
+  margin-right: 10px;
+  color: @text-panel;
+}
+
+.ws-toolbar .separator {
+  border: 1px solid @text-panel;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.ws-toolbar .icon:hover {
+  color: @bright-background !important;
+}
+
+.ws-toolbar-button {
+  margin-right: 10px;
+  margin-top: 15px;
+  display: inline-block;
+  cursor: pointer !important;
+}

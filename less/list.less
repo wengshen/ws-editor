@@ -1,0 +1,131 @@
+.ws-list {
+	/*background: @background-panel;*/
+	.ws-box-size;
+	.ws-nosel;
+    overflow: hidden;
+}
+
+.ws-list .item {
+	text-align: left !important;
+    color: @text-main !important;
+    font-size: 13px !important;
+    cursor: pointer;
+    display: block;    
+    background-color: #ffffff;
+    border-top: 1px solid rgba(128, 128, 128, 0.0784313725490196);
+    /*background-color: @background-panel !important;*/
+    background-image: none !important;
+    /*border-top: @border-main !important;*/
+    /*border-left: @border-main !important;*/
+    padding: 15px 10px;
+    .ws-box-size;
+    .ws-transition;
+}
+
+.ws-list .item:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ws-list .item:first-child {
+	border-top: none !important;
+}
+
+.ws-list .item-selected, .ws-list .item-selected:hover {
+    /*background-color: @bright-background !important;*/
+    background-color: white;
+    color: #25386f !important;
+    /*border-left: 3px solid @selected-item-color;*/
+    font-weight: bold;
+    cursor: default;
+}
+
+.ws-list-compact {
+    position: relative;
+    display:none;
+    text-align: left;
+  
+    padding-top:5px;
+    padding-bottom:5px;
+    font-weight: 600;
+    font-family: @font-main;
+    font-size: 20px;
+    background: @accent-color;
+    color: @accent-text;  
+
+    .ws-box-size;
+}
+
+.ws-list-compact .icon {
+      margin-right:30px;
+      margin-left:30px;
+}
+
+.item-arrow {
+    float: right;
+    margin-right: 6px;
+}
+
+.annotations-container {
+    float: right;
+}
+
+.annotations-btn {
+    display: inline-block;
+    margin-left: 5px;
+    /* margin-right: 5px; */
+    border: 1px solid rgba(128, 128, 128, 0.34901960784313724);
+    padding: 5px 7px;
+    position: relative;
+    border-radius: 4px;
+    top: -6px;
+    cursor: pointer;
+}
+
+.annotations-btn.active {
+    background-color: rgba(0, 0, 255, 0.2196078431372549);
+}
+
+.no-clickable {
+    cursor: default !important;
+}
+
+.ws-list-suboptions {
+    border: 1px solid rgba(140, 140, 140, 0.29);
+    border-radius: 4px;    
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ws-list-normal {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.ws-list-general-drop-down {
+    max-height: 28px;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+    .ws-list-general-drop-down-header {
+        background-color: rgb(239, 242, 251);
+        color: #364f94;
+        cursor: pointer;
+        padding-left: 5px !important;    
+        font-weight: bold;
+        font-size: 13px;
+    }
+    .ws-customizer-table {
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+  }
+
+  .ws-list-general-drop-down.active {
+    max-height: 500px;
+    transition: max-height 0.25s ease-in;
+  }
+
+  .ws-list-general-drop-down:first-of-type {
+    border-radius: 4px;
+  }

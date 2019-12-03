@@ -1,0 +1,90 @@
+.ws-tab-control {
+  width: 100% !important;
+  .ws-box-size;
+}
+
+.ws-tab-control .tabs {
+  background: @color-toolbar;
+  color: @background-toolbar;
+  height: 48px;
+  position: relative;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 40px;
+  padding: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  .ws-box-size;
+  .ws-nosel;
+}
+
+.ws-tab-control-more {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: @accent-color;
+  color: @accent-text;
+  width: 30px;
+  padding: 5px;
+  height: 100%;
+  text-align: center;
+  line-height: 40px !important;
+  display: none;
+  .ws-box-size;
+  .ws-transition;
+}
+
+.ws-tab-control-more:hover {
+  background: @wiz-bar-background;
+}
+
+.ws-tab-control .tab {
+  float: left;
+  font-weight: 100;
+  padding-left: 24px;
+  padding-right: 24px;
+  //	margin-right: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ws-tab-control .tab-body {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow-y: auto;
+  display: none;
+
+  .ws-box-size;
+  .ws-transition;
+}
+
+.ws-tab-control .tab-body-padded {
+  padding: 10px;
+}
+
+/*.ws-tab-control .body .tab-body {
+	padding: 10px;
+}*/
+
+.ws-tab-control .tab-selected {
+  font-weight: 600;
+}
+
+.ws-tab-control .body {
+  position: relative;
+  .ws-box-size;
+}
+
+.ws-tab-control .indicator {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100px;
+  height: 5px;
+  background: @selected-item-color;
+  .ws-transition;
+}

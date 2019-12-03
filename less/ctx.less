@@ -1,0 +1,102 @@
+
+.ws-ctx-container-common {
+    position: fixed;
+    border:@border-main;
+    background:@background-main;
+    color:@text-main;
+    z-index: 200000000;
+    opacity: 0;
+    pointer-events: none;
+    left:-2000px;
+    .ws-box-size;
+    .ws-transition-opacity;
+}
+
+//@media not only screen {
+    .ws-ctx-close-button {
+        display: none;
+    }
+//}
+
+@media only screen and (max-device-width:480px) {
+    .ws-ctx-container {
+        left: 0px !important;
+        top: 40px !important;
+        width: 100% !important;
+        height: 100% !important;
+        padding:10px !important;
+        overflow-y: auto !important;
+        padding-bottom: 42px !important;
+    }
+
+    .ws-ctx-close-button {
+       .ws-ok-button;
+       display: block !important;
+    }
+
+    .ws-ctx-item-responsive {
+        font-size: 20px !important;
+        height:42px !important;
+        line-height: 42px !important;
+        padding-left: 55px !important;
+        font-weight: 100 !important;
+       // border-bottom: @border-main
+    }
+
+    .ws-ctx-child-licon-responsive {
+        top:10px !important;
+        font-size: 22px !important;
+
+    }
+
+    .ws-ctx-item:hover {
+
+    }
+}
+
+.ws-ctx-item {
+    position: relative;
+    height:20px;
+    padding:3px;
+    padding-left:30px;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: @font-secondary;
+    min-width: 100px;
+    background-color: white;
+    .ws-nosel;
+}
+
+.ws-ctx-item-selected {
+    background: @accent-color;
+    color: @accent-text;
+}
+
+.ws-ctx-item:hover {
+    background:@accent-color;
+    color:@accent-text;
+}
+
+.ws-ctx-sep {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.050980392156862744);
+    background-color: white;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+
+.ws-ctx-item .ctx-child-icon {
+    position: absolute;
+    right:10px;
+    top:10px;
+    font-size: 12px;
+}
+
+.ws-ctx-item .ctx-child-licon {
+    width:30px;
+    text-align: left;
+    position: absolute;
+    left:10px;
+    top:8px;
+    font-size: 12px;
+}

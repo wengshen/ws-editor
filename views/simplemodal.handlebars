@@ -1,0 +1,25 @@
+<div style="padding:10px;" class="ws-box-size">
+    <div style="font-size:26px; font-weight:100;">Simple Modal Editor</div>
+    <br/><br/>
+    Result:
+    <br/><br/>
+    <textarea id="chart-result" class="ws-box-size" style="font-family:monospace;width:100%;height:400px"></textarea>
+    <br/><br/>
+    <button id="modal-btn" class="ws-imp-button">Create a chart</button>
+</div>
+
+<script>
+
+    ws.ready(function () {
+        ws.ModalEditor('modal-btn', {
+            allowDone: true,
+            type: 'simple',
+            importer: {
+                options: 'web csv json samples'
+            }
+        }, function (html) {
+            ws.dom.get('chart-result').value = html;
+        });
+    });
+
+</script>

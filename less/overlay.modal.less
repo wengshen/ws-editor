@@ -1,0 +1,81 @@
+.ws-overlay-modal {
+  width: 0px;
+  height: 0px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  font-family: @font-main;
+  color: @text-panel;
+  background: @background-panel;
+  // border: @border-main;
+
+  position: fixed;
+  z-index: 10000;
+  top: 50%;
+  left: -20000px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  border: 1px solid rgb(102, 102, 102);
+  pointer-events: none;
+
+  .ws-transition;
+}
+
+.ws-overlaymodal-close {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+.ws-modal-container {
+  .ws-modal-buttons-container {
+    margin-right: 10px;
+    margin-top: 45px;
+  }
+  textarea {
+    width: 98%;
+    min-height: 274px;
+    border-radius: 4px;
+    resize: none;
+  }
+  div {
+    margin-left: 10px;
+  }
+  .ws-modal-text {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    color: black;
+  }
+  .ws-modal-label {
+    text-align: right;
+    padding-right: 5px;
+    padding-left: 5px;  
+  }
+  .ws-table-container {
+    margin-top: 30px;
+    color: black;
+    font-size: 11px;
+    font-weight: 600;
+    margin-right: 30px;
+    margin-left: 0px;
+    table {
+      width: 100%;
+      .ws-live-data {
+        .ws-modal-label {
+          max-width: 67px;
+        }
+      }
+    }
+    .ws-imp-input-stretch {
+      height: 33px;
+    }
+  }
+  .ws-button-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+}

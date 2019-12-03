@@ -1,0 +1,441 @@
+.ws-toolbox {
+  position:relative;
+  margin-top: 15px;    
+  //overflow: auto;
+  margin-left: 30px;
+}
+
+.ws-toolbox-user-contents.test-test {
+  height: 100%;
+}
+
+.ws-toolbox-bar {
+  color: @accent-text;
+  display: inline-block;
+  width: 20%;
+  // border-right:1px solid @panel-divider;
+}
+
+.ws-wizard {
+  height: 100%;
+}
+
+.ws-wizard-body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.ws-toolbox-text {
+  display: inline-block;
+  width: 40%;
+}
+.ws-toolbox-extras {
+  display: inline-block;
+  float: right;
+}
+.ws-toolbox-body {
+  width: 78%;
+  height: 100% !important;
+  display: inline-block;
+  opacity: 0;
+  border: 1px solid @border-main-color;
+  color: @text-panel;
+  background: @background-panel-inverted;    
+  margin-right: 15px;
+  border-radius: 4px;
+  vertical-align: top;
+}
+.ws-toolbox-body-no-border {
+  border: 0px;
+}
+
+.ws-toolbox-inner-body {
+  position: relative;
+}
+
+.ws-toolbox-bar-icon {
+  width: 100%;
+  padding: 4px;
+  text-align:center;
+  line-height: 40px !important;
+  font-size: 24px !important;
+  margin-bottom: 5px;
+  height: 50px;
+}
+
+.ws-toolbox-live {
+  border: 2px solid;
+  padding: 3px 10px;
+  float: left;
+  display: none;
+  margin-top: -5px;
+  font-size: 15px;
+}
+
+.ws-toolbox-bar-icon:hover {
+  color: @bright-background;
+}
+.ws-toolbox-body-chart-title {
+  display: inline;
+  font-weight: 600;
+  color: #25386f;
+}
+
+.ws-toolbox-bar-icon-sel {
+  color: @selected-item-text !important;
+  background: @selected-item-color !important;
+}
+
+.ws-toolbox-user-contents {
+  width: 100%;
+  height: 100%;
+  top: 15px;
+}
+.ws-toolbox-dtable {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.ws-toolbox-input-container {
+  div {
+    display: inline-block;
+  }
+  .ws-toolbox-label {
+    color: #25386f;
+    font-size: 12px;
+    font-weight: 500;
+    padding-right: 5px;
+    text-align: right;
+  }
+  input {    
+    min-width: 300px;
+    min-height: 32px;
+    color: #000000;
+    font-weight: 100;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    border: 1px solid #D1D1D1;
+  }
+}
+.ws-toolbox-button-container {
+  text-align: right;
+  padding-top: 20px;
+}  
+.ws-toolbox-skip-all {
+  color: #25386f;
+  cursor: pointer;
+
+  text-align: right;
+  margin-top: 10px;
+  position: relative;
+  top: 7px;
+  margin-right: 10px;
+}
+.ws-toolbox-body-title {
+  width: 100%;
+  min-height: 20px;
+  overflow: hidden;
+  padding-left: 10px;
+  font-weight: 700;
+  color: #25386f;
+  font-size: 21px;
+  max-height: 62px;
+  margin: 20px;
+}
+
+.ws-modal-title {
+  width: 100%;
+  min-height: 20px;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-top: 15px;
+  font-weight: 700;
+  color: #25386f;
+  font-size: 21px;
+  max-height: 62px;
+}
+
+.ws-toolbox-icons {
+  float: right;
+  display: inline-block;
+  font-size: 19px !important;
+  position: relative;
+  top: 2px;
+  padding-right: 15px;
+  vertical-align: top;
+  .ws-toolbox-custom-code-icon {
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+  }
+  .fa-pie-chart {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.ws-icons-container {
+  display: inline-block;
+  margin-left: 10px;
+  .ws-toolbox-custom-code-icon {
+    font-size: 14px;
+    background-color: white;
+    color: #25386f;
+    border-radius: 40px;
+    padding: 8px 9px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .ws-toolbox-custom-code-icon.active {
+    color: rgb(66, 200, 192);
+  }
+}
+
+.ws-customize-title,
+.ws-back-icon {
+  display: inline-block;
+}
+
+.ws-back-icon {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.ws-toolbox-defaultpage {
+  overflow: auto;
+}
+
+.ws-toolbox-templatepage {
+  overflow-x: hidden;
+}
+.ws-wizard-loader {
+  float: left;
+  font-size: 23px;
+  display: none;
+}
+.ws-wizard-loader.active {
+  display: block;
+}
+
+.ws-toolbox-list-item-container.active{
+  .ws-toolbox-list-title {
+    color: rgb(66, 200, 192);
+  }
+  .ws-toolbox-list-circle {
+    color: rgb(66, 200, 192);
+    border: 2px solid rgb(66, 200, 192);
+  }
+}
+.ws-toolbox-list-item-container.completed{
+  .ws-toolbox-list-title {
+    color: #25386f;
+  }
+  .ws-toolbox-list-circle {
+    color: #25386f;;
+    border: 2px solid #25386f;;
+  }
+}
+
+.ws-toolbox-list-item-container {
+  .ws-toolbox-list-title {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  
+  .ws-toolbox-list-circle {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #d1d1d1;
+    color: #d1d1d1;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 8px;
+  }
+  
+}
+
+.ws-toolbox-template {
+  margin-left: 25px;
+  max-width: 963px;
+  .ws-template-header {
+    color: #243571;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .ws-template-title {
+    font-size: 13px;
+    color: #233272;
+    font-weight: 500;
+  }
+  .ws-toolbox-templates-container {
+    margin-top: 15px;
+  }
+  .ws-toolbox-template-text {
+    color: rgb(47, 62, 77);
+    padding: 4px;
+  }
+
+  .ws-template-container {
+    margin: 5px 18px;
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    cursor: pointer;
+  }
+  
+  .ws-toolbox-template-container {
+      margin-bottom: 15px;
+  }
+  
+
+}
+
+.ws-toolbox-customise {
+  margin-left: 20%;
+  .ws-toolbox-customize-header {
+    font-size: 26px;
+    color: #25386f;
+    font-weight: 600;
+  }
+  .ws-toolbox-button-container {
+    text-align: initial;
+    margin-left: -14px;
+  }
+  .ws-import-button {
+    padding: 15px 25px;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
+  .ws-toolbox-bar {
+    width: 100%;
+    .ws-toolbox-list-item-container {
+      display: inline-block;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .ws-wizard-title-container {
+    display: none;
+  }
+  .ws-toolbox-input-container {
+    input {
+      min-width: 237px;
+    }
+  }
+  .ws-toolbox {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .ws-toolbox-body {
+    width: 100%;
+  }
+  .ws-toolbox.wizard {
+    margin-left: 0px;
+    width: 100% !important;
+    margin-top: 0px;
+    overflow: auto;
+    .ws-toolbox-body {
+      width: 95%;
+    }
+  }
+  .ws-toolbox-inner-body {
+    .ws-table-dropzone-container .ws-table-dropzone {
+      min-height: 230px;
+    }
+    .ws-toolbox-body-title.wizard {
+      margin: 9px 0px;
+    }
+    .ws-table-dropzone-container {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .ws-table-dropzone-container .ws-table-dropzone .ws-table-dropzone-title {
+      margin-top: 15px;
+    }
+    .ws-toolbox-template {
+      margin-left: initial; 
+      width: initial;
+    }
+  }
+}
+
+.ws-simple-toolbox {
+  margin-left: 0px;
+}
+
+.ws-simple-toolbox-body{
+  opacity: 1;
+  margin-right: 0px;
+  width: 100%;
+}
+
+
+.ws-annotation-modal-container.active {
+  border-bottom: 2px solid black;
+}
+.ws-annotation-modal-container {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  margin-right: 3px;
+  margin-left: 3px;
+  cursor: pointer;
+  .ws-modal-icon {
+    color: rgb(56, 81, 146);
+    font-size: 24px;
+    margin-left: 0px;
+  }
+  .ws-modal-text {
+    color: rgb(47, 62, 77);
+    font-size: 13px;
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+.ws-modal-header {
+  color: rgb(56, 81, 146);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: @font-main
+}
+
+.ws-add-text-label {
+  min-height: 21px;
+  background-color: #eff2fb;
+  font-size: 12px;
+  padding-top: 4px;
+  padding-left: 5px;
+  color: rgb(56, 81, 146);
+  margin-bottom: 6px;
+  font-family: @font-main
+}
+.ws-modal-color-container {
+  div, input {
+    display: inline-block
+  }
+  input {
+    vertical-align: top;
+    height: 29px;
+    margin-left: 5px;
+    margin-top: 1px;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+  }
+}
+
+.ws-annotations-modal {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px inset, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+  width: 216px !important;
+  height: 291px !important;
+  border-radius: 2px;
+  border: 0px solid rgb(102, 102, 102);
+}

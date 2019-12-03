@@ -1,0 +1,68 @@
+.ws-chart-container {
+  position: absolute;
+  right: 35px;
+  bottom: 15px;
+  margin-right: 14px;
+  overflow: auto;
+  border-radius: 4px;
+}
+
+.ws-chart-frame {
+  width: 100%;
+  height: 100%;
+}
+
+.ws-chart-frame-body {
+  background: #FFF;
+  border: 1px solid @border-main-color;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.highcharts-container {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 4px;
+  .ws-box-size;
+  // box-shadow: 0 5px 10px @border-main-color;
+}
+
+.ws-show-chart-xs {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1150px) {
+  .ws-chart-container {
+    margin-right: 0px
+  }
+}
+
+@media (max-width: 768px) {
+  .ws-chart-container {
+    width: 100% !important;
+    height: 300px !important;
+    right: initial;
+    bottom: initial;
+  }
+
+  .ws-chart-container.active {
+    z-index: 30000;
+    .ws-chart-frame {
+      display: block;
+    }
+  }
+  .ws-show-chart-xs {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    padding: 15px;
+    z-index: 40000;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    color: #233473;
+    border-radius: 30px;
+    background-color: white;
+    cursor: pointer;
+    display: block;
+  }
+}

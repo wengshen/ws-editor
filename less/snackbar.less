@@ -1,0 +1,50 @@
+.ws-snackbar {
+  position: fixed;
+  bottom: -58px;
+  left: 10px;
+
+  height: 47px;
+
+  z-index: 10090;
+
+  border: @border-main;
+  background: @background-panel;
+  color: @text-main;
+  font-family: @font-main;
+  font-size: 14px;
+
+  padding-left: 24px;
+  padding-right: 24px;
+
+  border-radius: 3px;
+
+  line-height: 45px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  .ws-transition;
+}
+
+.ws-snackbar .snackbar-title {
+  padding-right: 24px;
+  text-transform: capitalize;
+}
+
+.ws-snackbar .snackbar-action {
+  color: @accent-color;
+  .ws-transition;
+}
+
+.ws-snackbar .snackbar-action:hover {
+  color: darken(@accent-color, 20);
+}
+
+.ws-snackbar-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  .ws-transition;
+}
+
+.ws-snackbar-close:hover {
+  color: @accent-color !important;
+}

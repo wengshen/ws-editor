@@ -1,0 +1,252 @@
+.ws-customizer-adv-loader {
+
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  color: @text-main;
+  opacity: 0;
+  pointer-events:none;
+  .fa-spinner {
+    font-size: 13px;
+  }
+}
+
+.active-highlight {
+  background-color: rgba(0, 0, 255, 0.08) !important;
+}
+
+.ws-simple-customizer {
+  margin: 0px 15px 40px 15px !important;
+  .ws-box-size;
+}
+
+.ws-customize-group {
+  /*border:@border-strong;*/
+  /*border-radius: 5px;*/
+  /*overflow: hidden;*/    
+}
+
+.ws-customize-master-dropdown {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.ws-customize-advanced {
+  padding: 15px;
+  .ws-customizer-table-heading {
+    font-size: 22px;
+    font-weight: 600;
+    color: #243671;
+  }
+}
+
+.ws-customizer-table-heading {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: @text-main;
+  font-weight: 400;
+  font-family: @font-main;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.ws-add-text-popup {
+  padding: 10px;
+}
+.ws-add-text-label {
+  color: black;
+  margin-top: 6px;
+}
+.ws-customize-group .ws-customizer-table-heading {
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 5px;
+  text-align: left;
+  /*border-bottom:@border-strong;*/
+  /*background: @background-header;*/
+}
+
+.ws-customizer-body {
+  /*background: @bright-background;*/
+  // color: @bright-text;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  height: auto;
+  /*border: @border-main;*/
+}
+
+.ws-custom-code {
+  width: 100%;
+  height: 100%;
+}
+
+.ws-custom-debug {
+  padding: 10px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.ws-customizer-table {
+  padding: 0px;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  .ws-box-size;
+  // border: 1px solid @border-main-color;
+}
+
+.ws-customizer-table-help {
+  width: 10px;
+}
+
+.ws-customize-type {
+  padding: 2px 4px;
+  margin-left: 5px;
+  font-size: 10px;
+  color: @type-text;
+  border-radius: 4px;
+}
+
+.ws-customize-type-number {
+  background: @type-number;
+}
+
+.ws-customize-type-number:before {
+  content: '123';
+}
+
+.ws-customize-type-string {
+  float:right;
+  background: @type-string;
+}
+
+.ws-customize-type-string:before {
+  content: 'abc';
+}
+
+.ws-customize-type-color {
+}
+
+.ws-customize-type-range {
+}
+
+.ws-customize-type-font {
+}
+
+.ws-customize-field-label {
+  font-weight: 100;
+}
+
+.ws-customize-group .ws-customizer-table {
+  margin-bottom: 0;
+  margin-top: 0;
+  // border: 1px solid @border-main-color;
+  // box-shadow: 0 3px 7px @bright-shadow;
+}
+
+.ws-customizer-table td {
+  padding: 10px;
+  // border-bottom: 2px solid @border-main-color;
+}
+
+.ws-customizer-table tr:last-child td {
+  border: none;
+}
+
+.ws-customize-warning {
+  color: #721c24;
+  background-color: #f5c6cb;
+  margin: -2px 5px 7px 5px;
+  border: 2px dashed #f9b5b5;
+  padding: 7px 6px;
+  border-radius: 3px;
+}
+
+.ws-customizer-table tr {
+  //border-bottom: @border-main;
+  height: 30px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.ws-customizer-table tr:hover {
+  background: darken(@background-panel, 2);
+}
+
+.ws-customizer-table td:first-child {
+  font-family: @font-secondary;
+  min-width: 30%;
+  width: 30%;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.ws-customizer-table td:nth-child(2) {
+  //width: 200px;
+}
+
+.ws-customizer-table td:last-child {
+  position: relative;
+  min-width: 40px;
+  padding-left: 0px !important;
+}
+
+.ws-customizer-table td.ws-customizer-table-help {
+  max-width: 35px;
+  padding-right: 0;
+  text-align: center;
+}
+
+.ws-customizer-table td.ws-customizer-table-help .ws-icon {
+  margin: 0;
+}
+
+.ws-customizer-table tr:nth-child(even) {
+  background: lighten(@background-panel, 3);
+}
+
+.ws-customizer-table tr:nth-child(odd) {
+  background: lighten(@background-panel, 3);
+}
+
+.ws-field-table-widget-column table,
+.ws-customizer-table .ws-field-table-widget-column table tr {
+  background: transparent;
+}
+
+.ws-customizer-field-highlighter {
+  position: fixed;
+  pointer-events: none;
+
+  background: @accent-color;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+
+  .ws-transition;
+}
+.ws-customizer-table-parent,
+.ws-customizer-table-help {
+  color: black;
+  display: inline-block;
+  font-size: 11px;
+  font-family: sans-serif;
+}
+.ws-customizer-table-parent {
+  padding-bottom: 5px;
+  vertical-align: top;
+}
+
+.ws-customize-field-boolean {
+  display: inline-block;
+  padding-left: 5px;
+}
