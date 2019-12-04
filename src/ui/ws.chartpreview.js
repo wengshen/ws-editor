@@ -1591,7 +1591,7 @@ ws.ChartPreview = function(parent, attributes) {
     });
   }
 
-  /** Set an attribute
+  /** 设置一个属性
    *  @memberof ws.ChartPreview
    *  @name options.set
    *  @param id {string} - the path of the attribute
