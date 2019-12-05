@@ -49,6 +49,7 @@ var ws = {
   /** Clear an object
    * Deletes all the object attributes.
    * Useful when needing to clear an object without invalidating references to it
+   * 在需要清除对象而不使对它的引用无效时很有用
    * @namespace ws
    * @param obj {object} - the object to clear
    */

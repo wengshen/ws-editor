@@ -2,7 +2,7 @@
 
 // @format
 
-/** Basic chart preview
+/** 基本图表预览
  *  This is just a facade to Highcharts.Chart mostly.
  *  It implements a sliding drawer type widget,
  *  where the initial state can be as part of the main DOM,
@@ -85,6 +85,7 @@ ws.ChartPreview = function(parent, attributes) {
     ),
     expanded = false,
     constr = ['Chart'],
+      //wysiwyg:所见即所得，联动触发
     wysiwyg = {
       'g.highcharts-legend': { tab: 'Legend', dropdown: 'General', id: 'legend--enabled' },
       'text.highcharts-title': { tab: 'Chart',  dropdown: 'Title', id: 'title--text' },
@@ -1591,7 +1592,7 @@ ws.ChartPreview = function(parent, attributes) {
     });
   }
 
-  /** 设置一个属性
+  /** 设置属性
    *  @memberof ws.ChartPreview
    *  @name options.set
    *  @param id {string} - the path of the attribute

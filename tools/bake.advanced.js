@@ -23,13 +23,15 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ******************************************************************************/
 
-/* Take a fresh API dump and bake it into the sources */
+/* 获取最新的API dump 并且生成到src目录 */
+/* hack：Hack是基于开源的程序的基础，对其代码进行增加、删除或者修改、优化，使之在功能上符合新的需求。*/
 
 var apiDumpURL = 'http://api.highcharts.com/highcharts/option/dump.json',
     request = require('request'),
     fs = require('fs'),
     apiSorted = {},
     license = fs.readFileSync(__dirname + '/../LICENSE'),
+    //忽略的属性清单
     ignores = {
         'chart--spacing': true,
         'chart--margin': true,
@@ -131,15 +133,15 @@ function process(data) {
         console.log('[error]'.red, e);
         return false;
     }
-
+    //按照属性名称进行localeCompare
     data.sort(function (a, b) {
         return a.name.toUpperCase().localeCompare(b.name.toUpperCase());
     });
-
+    //分类
     sortAPI(data);
 
     fs.writeFileSync(__dirname + '/../api.js', JSON.stringify(data, undefined, '  '));
-
+    //规整属性
     data.forEach(function (entry) {
         var parent = entry.parent || removeType(entry.name),
             current = tree,
