@@ -2970,7 +2970,7 @@ ws.DataTable = function(parent, attributes) {
       { label: 'Refresh Time in Seconds', placeholder: 'Refresh time  (leave blank for no refresh)', colspan: 2, linkedTo: liveDataIntervalInput},
       { label: 'Type', colspan: 2, linkedTo: liveDataTypeSelect, type:'select'}],
     table = createTableInputs(inputs, 2, 'ws-live-data'),
-    importData = ws.dom.cr('button', 'ws-ok-button ws-import-button negative', 'Import Data'),
+    importData = ws.dom.cr('button', 'ws-ok-button ws-import-button negative', '导入数据'),
     cancel = createCancelBtn();
 
     ws.dom.on(importData, 'click', function() {
@@ -3034,7 +3034,7 @@ ws.DataTable = function(parent, attributes) {
 
   function createCutAndPasteContainer(toNextPage) {
     const container = ws.dom.cr('div', 'ws-modal-container');
-    importData = ws.dom.cr('button', 'ws-ok-button ws-import-button negative', 'Import Data');
+    importData = ws.dom.cr('button', 'ws-ok-button ws-import-button negative', '导入数据');
     input = ws.dom.cr('textarea', 'ws-table-input'),
     cancel = createCancelBtn();
 

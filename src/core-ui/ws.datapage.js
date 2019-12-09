@@ -64,10 +64,10 @@ ws.DataPage = function(parent, options, chartPreview, chartFrame, props) {
       )
     ),   
     addRowInput = ws.dom.cr('input', 'ws-field-input ws-add-row-input'),
-    addRowBtn = ws.dom.cr('button', 'ws-import-button ws-ok-button ws-add-row-btn small', 'Add'),
+    addRowBtn = ws.dom.cr('button', 'ws-import-button ws-ok-button ws-add-row-btn small', '添加'),
     addRowDiv = ws.dom.ap(ws.dom.cr('div', 'ws-dtable-extra-options'),
                 ws.dom.ap(ws.dom.cr('div', 'ws-add-row-container'),
-                  ws.dom.cr('span', 'ws-add-row-text ws-hide-sm', 'Add Rows'),
+                  ws.dom.cr('span', 'ws-add-row-text ws-hide-sm', '添加行'),
                   addRowInput,
                   addRowBtn
                 )
@@ -76,11 +76,11 @@ ws.DataPage = function(parent, options, chartPreview, chartFrame, props) {
     dataImportBtn = ws.dom.cr(
       'button',
       'ws-import-button ws-ok-button ws-sm-button',
-      'Import');
+      '导入');
     dataExportBtn = ws.dom.cr(
       'button',
       'ws-import-button ws-ok-button ws-hide-sm',
-      'Export Data');
+      '导出数据');
     dataClearBtn = ws.dom.cr(
       'button',
       'ws-import-button ws-ok-button ws-sm-button',

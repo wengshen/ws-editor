@@ -7,7 +7,7 @@ ws.AssignDataPanel = function(parent, dataTable, extraClass) {
   var defaultOptions = {
     'labels': {
       'name': "Categories",
-      'desc': 'Choose a column for the category types. Can be names or a date.',
+      'desc': '为类别类型选择列。可以是名称或日期。.',
       'default': 'A',
       'value': 'A',
       'rawValue': [0],
@@ -71,11 +71,11 @@ ws.AssignDataPanel = function(parent, dataTable, extraClass) {
     headerToggle = ws.dom.cr('span', '', '<i class="fa fa-chevron-down ws-assigndatapanel-toggle" aria-hidden="true"></i>'),
     header = ws.dom.ap(
               ws.dom.cr('div', 'ws-assigndatapanel-header-container'),
-              ws.dom.ap(ws.dom.cr('h3', 'ws-assigndatapanel-header', 'Assign columns for this chart'), headerToggle)),
+              ws.dom.ap(ws.dom.cr('h3', 'ws-assigndatapanel-header', '为此图表分配列'), headerToggle)),
     labels = ws.dom.cr('div', 'ws-assigndatapanel-data-options'),
     selectContainer = ws.dom.cr('div', 'ws-assigndatapanel-select-container'),
     changeSeriesTypeContainer = ws.dom.cr('div', 'ws-assigndatapanel-change-series-type'),
-    changeSeriesTypeLink = ws.dom.cr('a', 'ws-assigndatapanel-change-series-type-link', 'Click here to change series template type'),
+    changeSeriesTypeLink = ws.dom.cr('a', 'ws-assigndatapanel-change-series-type-link', '点击此处更改 series template 类型'),
     inputContainer = ws.dom.cr('div', 'ws-assigndatapanel-inputs-container'),
     addNewSeriesBtn = ws.dom.cr('button', 'ws-assigndatapanel-add-series', '<i class="fa fa-plus"/>'),
     deleteSeriesBtn = ws.dom.cr('button', 'ws-assigndatapanel-add-series', '<i class="fa fa-trash"/>'),

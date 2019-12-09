@@ -24,7 +24,7 @@ ws.CreateChartPage = function(parent, userOptions, props) {
       },
       {
         id: 3,
-        title: 'Import Data',
+        title: '导入数据',
         create: function(body) {
           ws.dom.ap(body, dataTableContainer);
         }
