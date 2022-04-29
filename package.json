@@ -20,7 +20,7 @@
     ]
   },
   "devDependencies": {
-    "async": "^2.0.0",
+    "async": "^2.6.4",
     "gulp": "3.9.1",
     "gulp-concat": "2.6.0",
     "gulp-electron": "0.1.3",
